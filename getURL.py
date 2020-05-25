@@ -12,7 +12,8 @@ def get_url():
 	protocol = rd.get_http('scheme')
 	baseurl = rd.get_http('baseurl')
 	port = rd.get_http('port')
-	return protocol + '://' + baseurl + ':' + port +'/login?'
+	return protocol + '://' + baseurl + ':' + port + '/login?'
+
 
 if __name__ == '__main__':
 	print(get_url())

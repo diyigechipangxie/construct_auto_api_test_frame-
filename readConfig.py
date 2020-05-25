@@ -15,12 +15,17 @@ conf_obj.read(conf_path, 'utf-8')
 
 
 class ReadConf(object):
+
 	def get_http(self, name):
 		value = conf_obj.get('HTTP', name)
 		return value
 
 	def get_email(self, name):
 		value = conf_obj.get('EMAIL', name)
+		return value
+
+	def get_mysql(self, name):
+		value = conf_obj.get('MYSQL', name)
 		return value
 
 
